@@ -1,5 +1,5 @@
 proxy:
-  image: nginx
+  image: 192.168.87.207:5000/identiproxy
   links:
     - identidock
   ports:
