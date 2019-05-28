@@ -5,7 +5,7 @@ proxy:
   ports:
     - "80:80"
 identidock:
-  image: 192.168.87.207:5000/identidock
+  image: 192.168.87.207:5000/identidock:newest
   environment:
     ENV: DEV
   volumes:
