@@ -1,7 +1,11 @@
-identidock:
-  build: .
+proxy:
+  image: nginx
+  links:
+    - identidock
   ports:
-    - "5000:5000"
+    - "80:80"
+identidock:
+  image: 192.168.87.207:5000/identidock
   environment:
     ENV: DEV
   volumes:
